@@ -1,0 +1,14 @@
+<launch>
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch">
+  </include>
+
+  <include file="/home/hh/HiDOG/src/HiDOG_bringup/launch/kinect2_depthimg2laserscan.launch">
+  </include>
+
+  <include file="$(find turtlebot_navigation)/launch/gmapping.launch">
+  </include>
+
+  <include file="$(find turtlebot_navigation)/launch/amcl.launch">
+  </include>
+
+</launch>
